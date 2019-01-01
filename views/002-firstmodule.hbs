@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial: Bonjour Dojo!</title>
+</head>
+
+<body>
+    <h1>Premier module</h1>
+    <code id="greeting">Texte d'origine</code>
+    <p>Le texte d'origine est remplacé immédiatement, le texte de remplacement reste 3 secondes à l'écran</p>
+    <!-- load Dojo -->
+    <script>
+        var dojoConfig = {
+            async: true,
+            packages: [{
+                name: "formation",
+                location: location.pathname.replace(/\/[^/]*$/, '') + '/javascripts/formation'
+            }]
+        }
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js" data-dojo-config="async: true"></script>
+    <script>
+        require([
+            'formation/002-firstmodule'
+        ], function (myModule) {
+            myModule.setText("greeting", "Ce texte va être remplacé dans 3 secondes")
+            setTimeout(() => {
+                myModule.restoreText("greeting")
+            },3000)
+        });
+    </script>
+</body>
+
+</html>
