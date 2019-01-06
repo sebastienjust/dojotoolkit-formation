@@ -74,6 +74,30 @@ var COURSES = [{
   layout: "layout-app",
   view: "body-app",
   module: "011-deferred"
+},{
+  name: "012-atelier",
+  title: "Atelier",
+  layout: "layout-app",
+  view: "body-app",
+  module: "012-atelier"
+},{
+  name: "020-dijit",
+  title: "Dijit",
+  layout: "layout-app",
+  view: "body-app",
+  module: "020-dijit"
+},{
+  name: "021-dijit-dynamic",
+  title: "Dijit dynamique",
+  layout: "layout-app",
+  view: "body-app",
+  module: "021-dijit-dynamic"
+},{
+  name: "022-dijit-own",
+  title: "Dijit own widgets",
+  layout: "layout-app",
+  view: "body-app",
+  module: "022-dijit-own"
 }]
 
 /* GET home page. */
