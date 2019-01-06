@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8">
+    <title>Dojo toolkit</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+
+<body>
+    {{{body}}}
+    <script>
+        var dojoConfig = {
+            async: true,
+            packages: [{
+                name: "formation",
+                location: location.pathname.replace(/\/[^/]*$/, '') + '/javascripts/formation'
+            }]
+        }
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js" data-dojo-config="async: true"></script>
+    <script>
+        require([
+            'formation/{{module}}',
+            'dojo/domReady!'
+        ], function (module, dom, domConstruct) {
+            module.start()
+        });
+    </script>
+</body>
+
+</html>
