@@ -20,13 +20,17 @@
   },
   "homepage": "https://github.com/sebastienjust/dojotoolkit-formation#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "express-generator": "^4.16.0",
-    "lodash": "^4.17.11",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "dijit": "github:dojo/dijit",
+    "dojo": "github:dojo/dojo",
+    "dojo-util": "github:dojo/util",
+    "dojox": "github:dojo/dojox",
+    "express": "^4.16.4",
+    "express-generator": "^4.16.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
+    "lodash": "^4.17.11",
     "morgan": "~1.9.0"
   }
 }

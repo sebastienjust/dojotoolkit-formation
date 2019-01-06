@@ -18,6 +18,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use("/js/dojo",express.static(path.join(__dirname, 'node_modules', 'dojo')));
+app.use("/js/dijit",express.static(path.join(__dirname, 'node_modules', 'dijit')));
+app.use("/js/dojox",express.static(path.join(__dirname, 'node_modules', 'dojox')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
