@@ -26,7 +26,6 @@ define(["dojo/request", "dojo/_base/array", "dojo/dom-construct", "dojo/dom"],
             });
         }
 
-
         return {
             start: start
         }
