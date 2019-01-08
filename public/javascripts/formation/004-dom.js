@@ -31,7 +31,7 @@ define(["dojo/dom", "dojo/dom-construct"],
                 innerHTML: "five",
                 className: "five"
             }, list);
-            domContruct.create("li", {
+            domConstruct.create("li", {
                 id: "sixEmpty"
             }, list)
 
@@ -41,6 +41,8 @@ define(["dojo/dom", "dojo/dom-construct"],
             
         }
 
-        return {start:start};
+        return {
+            "start":start
+        };
 
     });
