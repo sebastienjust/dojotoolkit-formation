@@ -98,6 +98,18 @@ var COURSES = [{
   layout: "layout-app",
   view: "body-app",
   module: "022-dijit-own"
+},{
+  name: "023-atelier",
+  title: "Atelier dijit",
+  layout: "layout-app",
+  view: "body-app",
+  module: "023-atelier"
+},{
+  name: "024-atelier",
+  title: "Atelier dijit",
+  layout: "layout-app",
+  view: "body-app",
+  module: "024-atelier"
 }]
 
 /* GET home page. */

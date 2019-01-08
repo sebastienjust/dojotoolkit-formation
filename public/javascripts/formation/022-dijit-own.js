@@ -106,7 +106,7 @@ define([
         })
 
         var btn = new Button({label: "Selection 1er"}, dom.byId('btnWrapper'))
-        btn.on("click", () => userBoxes[0].set("selected", true))
+        btn.on("click", () => userBoxes[0].set("selected", !userBoxes[0].get('selected')))
 
     }
     return { start }
