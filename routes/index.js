@@ -110,6 +110,12 @@ var COURSES = [{
   layout: "layout-app",
   view: "body-app",
   module: "024-atelier"
+},{
+  name: "025-atelier",
+  title: "Atelier dijit own widget",
+  layout: "layout-app",
+  view: "body-app",
+  module: "025-atelier"
 }]
 
 /* GET home page. */
